@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Here Write Title name</title>
+        <link href="https://fonts.googleapis.com/css?family=Exo:100,400,400i,500" rel="stylesheet">
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+
+        <style>
+        .floating-box {
+            float: left;
+            width: 150px;
+            height: 75px;
+            margin: 10px;
+            border: 3px solid #73AD21;
+        }
+
+        .after-box {
+            clear: left;
+            border: 3px solid red;
+        }
+        .floating-box-1 {
+        display: inline-block;
+        width: 150px;
+        height: 75px;
+        margin: 10px;
+        border: 3px solid #73AD21;
+        }
+
+        .after-box-1 {
+        border: 3px solid red;
+        }
+</style>
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body>
+        <!-- Header section start -->
+        <section class="header-section">
+           <div class="container">
+               <div class="row">
+                   <div class="col-sm-12">
+                       <div class="header-text">
+                       <h2 class="header-text text-center">CSS Layout - The display Property</h2>
+                       <p>The <span  style="color:coral"> display</span> property is the most important CSS property for controlling layout.</p>
+                        
+                        </div>
+                        <h>The display Property</h>
+                        <p>The <span  style="color:coral"> display</span> property specifies if/how an element is displayed.</p>
+                        Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is<span  style="color:coral"> block</span> or <span  style="color:coral">inline</span>.
+                        <div style="border:1px solid #27ad93">The &lt;div&gt; element is a block-level element.</div>
+                        <p>Examples of block-level elements:</p>
+                        <ul>
+                            <li>&lt;div&gt;</li>
+                            <li>&lt;h1&gt; -- &lt;h6&gt;</li>
+                            <li>&lt;p&gt;</li>
+                            <li>&lt;form&gt;</li>
+                            <li>&lt;footer&gt;</li>
+                            <li>&lt;section&gt;</li>
+                        </ul>
+                        <h2>Inline Elements</h2>
+                        <p>An inline element does not start on a new line and only takes up as much width as necessary.</p>
+                        <p>This is <span style="border:1px solid #73ad93">an inline &lt;span&gt; element inside</span> a paragraph.</p>
+                        <p>Examples of inline elements:</p>
+                        <ul>
+                            <li>&lt;span&gt;</li>
+                            <li>&lt;a&gt;</li>
+                            <li>&lt;img&gt;</li>
+                        </ul>
+                        <h2>Display: none;</h2>
+                        <p><span  style="color:coral"> display: none;</span>  is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved.</p>
+                        <p>The <span  style="color:coral"> &lt;script&gt;</span> element use <span  style="color:coral">display: none;</span>  as its default. </p>
+                        <h2>CSS Layout - inline-block</h2>
+                        <h4>The inline-block Value</h4>
+                        <p>It has been possible for a long time to create a grid of boxes that fills the browser width and wraps nicely (when the browser is resized), by using the<span  style="color:coral"> float</span>  property.</p>
+                        <p>However, the <span  style="color:coral"> inline-block</span>  value of the <span  style="color:coral"> display</span>  property makes this even easier.</p>
+                        <p>inline-block elements are like inline elements but they can have a width and a height.</p>
+                        <h4>Examples</h4>
+                       <p>The old way - using<span  style="color:coral"> float</span>  (notice that we also need to specify a <span  style="color:coral"> clear</span> clear property for the element after the floating boxes):</p>
+                       <h2>The Old Way - using float</h2>
+                        <div class="floating-box">Floating box</div>
+                        <div class="floating-box">Floating box</div>
+                        <div class="floating-box">Floating box</div>
+                        <div class="floating-box">Floating box</div>
+                        <div class="floating-box">Floating box</div>
+                        <div class="floating-box">Floating box</div>
+                        <div class="floating-box">Floating box</div>
+                        <div class="floating-box">Floating box</div>
+                        <div class="after-box">Another box, after the floating boxes...</div>
+                <p>The same effect can be achieved by using the <span  style="color:coral"> inline-block</span>  value of the <span  style="color:coral"> display</span>  property (notice that no <span  style="color:coral"> clear</span>  property is needed):</p>
+                <h2>The New Way - using inline-block</h2>
+
+                    <div class="floating-box-1">Floating box</div>
+                    <div class="floating-box-1">Floating box</div>
+                    <div class="floating-box-1">Floating box</div>
+                    <div class="floating-box-1">Floating box</div>
+                    <div class="floating-box-1">Floating box</div>
+                    <div class="floating-box-1">Floating box</div>
+                    <div class="floating-box-1">Floating box</div>
+                    <div class="floating-box-1">Floating box</div>
+                    <div class="after-box">Another box, after the floating boxes...</div>
+            </div> 
+        </section>
+        <!-- Header section End    -->
+          <div class="line number1 index0 alt2">
+              <code>for</code>
+              <code>#include</code>
+          </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
